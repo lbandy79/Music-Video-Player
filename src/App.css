@@ -1,22 +1,57 @@
 body {
-  background-image: url("okgo.jpg");
+  background-image: url("paint.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   text-align: center;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 300;
   color: white;
+  height: 100vh;
 }
 
-input {
-  padding: 5px;
-  font-size: 16px;
-}
-
-input:not(:first-of-type) {
-  margin-left: 20px;
+h1 {
+  font-family: Impact;
+  font-size: 50px;
+  margin-top: 15px;
 }
 
 video {
-  margin: 30px;
-  width: 700px;
-  max-width: 85%;
+    width: 80%;
+    height: auto;
+    border: 5px solid white;
+}
+
+@media all and (max-width: 1500px) { 
+    body {
+        font-size: 1.7em; 
+    }
+    h1 {
+      font-size: 2.5em;
+    }
+}
+@media all and (max-width: 1200px) { 
+    body {
+        font-size: 1.5em; 
+    }
+}
+@media all and (max-width: 1000px) { 
+    body {
+        font-size: 1em; 
+        }
+    }
+@media all and (max-width: 500px) { 
+    body {
+        font-size: 0.8em; 
+        }
+    }
+
+form {
+  background:rgba(0,0,0,0.5);
+  padding: 0px;
+  font-family: Arial;
+  width: 100%;
+  height: auto;
+}
+
+.form-group > * {
+   margin:5px 12px;
 }

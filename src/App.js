@@ -1,3 +1,7 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import $ from 'jquery';
+import Popper from 'popper.js';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 import React from 'react';
 import './App.css';
 import { Video } from './Video';
@@ -18,7 +22,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.chooseVideo = this.chooseVideo.bind(this);
-    this.state = { src: VIDEOS.one };
+    this.state = { src: VIDEOS.four };
   }
 
   chooseVideo (newVideo) {
@@ -29,7 +33,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="container-fluid">
         <h1>OK Go Music Video Player</h1>
         <Menu chooseVideo = { this.chooseVideo } />
         <Video src= { this.state.src } />
